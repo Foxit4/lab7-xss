@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><title>Студенти</title></head>
+<body>
+  <h1>Студенти</h1>
+  {% for student in students %}
+  <p><a href="{{ url_for('student_detail', student_id=student['id']) }}">{{ student["name"] }}</a> ({{ student["grp"] }})</p>
+  {% endfor %}
+</body>
+</html>

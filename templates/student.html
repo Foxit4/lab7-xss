@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><title>Студент</title></head>
+<body>
+  <h1>{{ student["name"] }}</h1>
+  <form method="post" action="#">
+    <input name="name" value="{{ student['name'] }}">
+  </form>
+  <p><a href="{{ url_for('students') }}">До списку</a></p>
+</body>
+</html>
