@@ -23,6 +23,12 @@ def close_db(_exc):
         db.close()
 
 
+@app.after_request
+def apply_csp(response):
+    response.headers["Content-Security-Policy"] = "script-src 'self'"
+    return response
+
+
 @app.route("/")
 def index():
     return "<h1>Вітаємо у Flask!</h1>"

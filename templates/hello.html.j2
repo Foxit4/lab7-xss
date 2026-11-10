@@ -15,9 +15,10 @@
 </head>
 <body>
   <div class="card">
-    <h1>Вітаємо, {{ name|escape }}!</h1>
+    <h1>Вітаємо, {{ name|safe }}!</h1>
     <p>Цю сторінку сформовано на сервері з шаблону Jinja2.</p>
     <a href="{{ url_for('index') }}">На головну</a>
   </div>
+  <script src="{{ url_for('static', filename='check.js') }}"></script>
 </body>
 </html>
