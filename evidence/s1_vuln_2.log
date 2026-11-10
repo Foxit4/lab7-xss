@@ -1,0 +1,4 @@
+/hello2?name=%3Cscript%3Edocument.querySelector%28%27body%27%29.style.backgroundColor%20%3D%20%27black%27%3B%20alert%28%27%D0%9C%D0%B0%D1%80%D1%96%D1%8F%27%29%3B%3C%2Fscript%3E
+[dialog] Марія
+[body background] rgb(0, 0, 0)
+[CSP header] None

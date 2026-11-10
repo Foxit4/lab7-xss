@@ -1,0 +1,5 @@
+/students
+[console.error] Executing inline script violates the following Content Security Policy directive 'script-src 'self''. Either the 'unsafe-inline' keyword, a hash ('sha256-kNShxzU0TYI8w1bsujgbPcQ4oIISMT9erFfdwx1ma+M='), or a nonce ('nonce-...') is required to enable inline execution. The action has been blocked.
+[console.info] Зовнішній навчальний скрипт завантажено
+[body background] rgba(0, 0, 0, 0)
+[CSP header] script-src 'self'

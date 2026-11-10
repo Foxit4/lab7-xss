@@ -1,0 +1,4 @@
+/dom-check?name=%3C%2Fscript%3E%26%22
+[console.info] </script>&"
+[body background] rgba(0, 0, 0, 0)
+[CSP header] script-src 'self'

@@ -1,0 +1,4 @@
+textContent -> '<b>Марія</b>' | дочірніх елементів у #result: 0 | текст: <b>Марія</b>
+textContent -> "<script>alert('XSS')</script>" | дочірніх елементів у #result: 0 | текст: <script>alert('XSS')</script>
+innerHTML   -> '<b>Марія</b>' | дочірніх елементів: 1 | тег: B
+діалоги: []

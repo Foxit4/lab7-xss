@@ -1,0 +1,4 @@
+/students
+[dialog] XSS
+[body background] rgba(0, 0, 0, 0)
+[CSP header] None
