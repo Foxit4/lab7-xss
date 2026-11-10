@@ -40,6 +40,12 @@ def hello(name):
     return render_template("hello.html.j2", name=name)
 
 
+@app.get("/hello2")
+def hello2():
+    name = request.args.get("name", "Гість")
+    return render_template("hello.html.j2", name=name)
+
+
 @app.get("/students")
 def students():
     rows = get_db().execute("SELECT id, name, grp FROM students ORDER BY id").fetchall()
