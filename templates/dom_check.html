@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><title>Перевірка DOM</title></head>
+<body>
+  <h1>Перевірка клієнтського відображення</h1>
+  <input id="source" type="text" size="50">
+  <button id="show" type="button">Показати</button>
+  <div id="result"></div>
+
+  <script id="name-data" type="application/json">{{ name|tojson }}</script>
+  <script src="{{ url_for('static', filename='read-name.js') }}"></script>
+  <script src="{{ url_for('static', filename='dom-check.js') }}"></script>
+</body>
+</html>

@@ -43,13 +43,19 @@ def info():
 
 @app.route("/hello/<name>")
 def hello(name):
-    return render_template("hello.html.j2", name=name)
+    return render_template("hello.html", name=name)
 
 
 @app.get("/hello2")
 def hello2():
     name = request.args.get("name", "Гість")
-    return render_template("hello.html.j2", name=name)
+    return render_template("hello.html", name=name)
+
+
+@app.get("/dom-check")
+def dom_check():
+    name = request.args.get("name", "Гість")
+    return render_template("dom_check.html", name=name)
 
 
 @app.get("/students")
