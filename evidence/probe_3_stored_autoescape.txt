@@ -1,0 +1,26 @@
+name='Марія'
+  status=200  CSP=None
+  <h1>Вітаємо, Марія!</h1>
+name="<script>document.querySelector('body').style.backgroundColor = 'black'; alert('Марія');</script>"
+  status=200  CSP=None
+  <h1>Вітаємо, &lt;script&gt;document.querySelector(&#39;body&#39;).style.backgroundColor = &#39;black&#39;; alert(&#39;Марія&#39;);&lt;/script&gt;!</h1>
+name='Марія&Олег'
+  status=200  CSP=None
+  <h1>Вітаємо, Марія&amp;Олег!</h1>
+name='<b>Марія</b>'
+  status=200  CSP=None
+  <h1>Вітаємо, &lt;b&gt;Марія&lt;/b&gt;!</h1>
+name='a"b\'c'
+  status=200  CSP=None
+  <h1>Вітаємо, a&#34;b&#39;c!</h1>
+name='&lt;b&gt;'
+  status=200  CSP=None
+  <h1>Вітаємо, &amp;lt;b&amp;gt;!</h1>
+без name -> <h1>Вітаємо, Гість!</h1>
+
+/students:
+  <p><a href="/students/1">Марія Коваленко &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;</a> (ІПЗ-21)</p>
+  <p><a href="/students/2">Олег Шевченко</a> (ІПЗ-21)</p>
+  <p><a href="/students/3">Ірина Бойко</a> (ІПЗ-22)</p>
+  <p><a href="/students/4">Андрій Мельник</a> (ІПЗ-22)</p>
+  CSP = None
